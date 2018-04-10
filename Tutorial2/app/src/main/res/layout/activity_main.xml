@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <EditText
+        android:id="@+id/number2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number1"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Second number"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/number1"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="First number"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/divideButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/number2"
+        android:onClick="divideClick"
+        android:text="divide" />
+
+    <Button
+        android:id="@+id/multiplyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number2"
+        android:layout_toStartOf="@+id/divideButton"
+        android:onClick="multiplyClick"
+        android:text="multiply" />
+
+    <Button
+        android:id="@+id/subtracbButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number2"
+        android:layout_toStartOf="@+id/multiplyButton"
+        android:onClick="subtractClick"
+        android:text="subtract" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/number2"
+        android:layout_below="@+id/number2"
+        android:onClick="addClick"
+        android:text="Plus" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="162dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+</RelativeLayout>

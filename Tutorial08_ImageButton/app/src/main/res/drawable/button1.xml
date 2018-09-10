@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--버튼이 클릭 되었을 경우 불러오는 이미지 선택과 상태-->
+    <!--버튼에 마우스를 가져다 대었을때 이벤트 처리를 해주는 이미지 선택과 상태-->
+    <!--아무것도 하지 않았을 때의 이미지 선택과 상태-->
+
+    <item android:state_pressed="true" android:drawable="@drawable/click" />
+    <item android:state_focused="true" android:drawable="@drawable/hover" />
+    <item android:drawable="@drawable/normal" />
+</selector>

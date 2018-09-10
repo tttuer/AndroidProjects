@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+릴레이티브는 상대적으로 자신의 위치를 설정해준다.
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingRight="16dp" >-->
+
+    <!--&lt;!&ndash; 부모 객체의 위에 위치하고 수평적으로 중간에 위치하라 라는 뜻이다. &ndash;&gt;-->
+    <!--<Button-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:text="상"-->
+        <!--/>-->
+
+    <!--<Button-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:text="하"-->
+        <!--/>-->
+<!--</RelativeLayout>-->
+
+<!--<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingRight="16dp" >-->
+
+    <!--&lt;!&ndash; 하나의 행에 대한 정보를 넣을 수 있다. &ndash;&gt;-->
+    <!--<TableRow>-->
+        <!--<Button-->
+            <!--android:text="가"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:text="나"-->
+            <!--android:layout_span="2"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:text="다"-->
+            <!--/>-->
+    <!--</TableRow>-->
+    <!--<TableRow>-->
+        <!--<Button-->
+            <!--android:layout_column="1"-->
+            <!--android:text="라"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:text="바"-->
+            <!--/>-->
+    <!--</TableRow>-->
+
+<!--</TableLayout>-->
+
+<!-- 그리드 레이아웃은 전체 행과 열을 미리 지정해줘야한다.-->
+<!--<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingRight="16dp"-->
+    <!--android:columnCount="4"-->
+    <!--android:rowCount="3"-->
+    <!--&gt;-->
+
+    <!--<Button-->
+        <!--android:layout_column="0"-->
+        <!--android:layout_row="0"-->
+        <!--android:layout_rowSpan="2"-->
+        <!--android:layout_gravity="fill_vertical"-->
+        <!--android:text="가"-->
+        <!--/>-->
+
+    <!--<Button-->
+        <!--android:layout_column="1"-->
+        <!--android:layout_row="0"-->
+        <!--android:layout_columnSpan="3"-->
+        <!--android:layout_gravity="fill_horizontal"-->
+        <!--android:text="나"-->
+        <!--/>-->
+
+    <!--<Button-->
+        <!--android:layout_column="2"-->
+        <!--android:layout_row="1"-->
+        <!--android:text="다"-->
+        <!--/>-->
+<!--</GridLayout>-->
+
+<!-- 프레임 레이아웃의 특징은 겹친다는 것이다. -->
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingRight="16dp"-->
+    <!--&gt;-->
+
+    <!--<RatingBar-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="100dp" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:text="가"-->
+        <!--/>-->
+
+
+<!--</FrameLayout>-->
+
+<!-- 리니어 레이아웃의 가장 큰 특징은 처음에 어느 방향으로 할지를 정해주는 것이다.
+    orientation에 해당한다. 수직(vertical)이냐 수평(horizontal)이냐 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    >
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="텍스트 뷰"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="체크 박스"
+        />
+
+</LinearLayout>

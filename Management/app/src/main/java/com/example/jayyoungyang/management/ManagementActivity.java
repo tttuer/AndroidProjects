@@ -35,7 +35,7 @@ public class ManagementActivity extends AppCompatActivity {
 //        userList.add(new User("김감례", "김감례", "김감례", "22"));
 //        userList.add(new User("펭귄", "펭귄", "펭귄", "25"));
 
-        adapter = new UserListAdapter(getApplicationContext(), userList);
+        adapter = new UserListAdapter(getApplicationContext(), userList, this);
         listView.setAdapter(adapter);
 
         // 실제 가져오는 데이터베이스를 바탕으로 리스트를 채운다.
@@ -56,7 +56,12 @@ public class ManagementActivity extends AppCompatActivity {
 
                 // 유저 객체를 만들고 그것을 추가해주면 된다.
                 User user = new User(userID, userPassword, userName, userAge);
-                userList.add(user);
+//                userList.add(user);
+
+                // 선택한 아이디가 관리자 아이디가 아닌 경우에만 실행할 수 있도록 한다.
+                if(!userID.equals("admin")){
+                    userList.add(user);
+                }
                 count++;
             }
         } catch(Exception e) {

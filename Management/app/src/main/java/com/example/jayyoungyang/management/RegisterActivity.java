@@ -55,8 +55,10 @@ public class RegisterActivity extends AppCompatActivity {
                                         .show();
 
                                 // 그 이후 로그인 화면으로 돌아갈 수 있도록 해준다.
-                                Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
-                                RegisterActivity.this.startActivity(intent);
+//                                Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+////                                RegisterActivity.this.startActivity(intent);
+                                // 회원가입이 성공하면 회원가입 액티비티가 종료되게된다.
+                                finish();
                             } else {
                                 // 알림창은 이 RegisterActivity에 뜨게 된다.
                                 AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
